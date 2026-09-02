@@ -1,0 +1,85 @@
+# ==========================================
+# 1. PROJECT
+# ==========================================
+
+# Navigate to project
+cd C:\Users\chaym\Desktop\morocco-ecommerce-data-platform
+
+
+# ==========================================
+# 2. PYTHON VIRTUAL ENVIRONMENT
+# ==========================================
+
+# Allow PowerShell scripts for the current session
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+# Activate virtual environment
+.venv\Scripts\Activate.ps1
+
+# Check Python
+python --version
+
+# Check Python location
+where.exe python
+
+
+# ==========================================
+# 3. GIT
+# ==========================================
+
+# Check Git
+git --version
+
+# If Git is not recognized:
+$env:Path += ";C:\Program Files\Git\cmd"
+
+# Check Git again
+git --version
+
+# Check Git repository
+git status
+
+# Initialize repository if needed
+git init
+
+# Add .gitignore
+git add .gitignore
+
+# Check status
+git status
+
+
+# ==========================================
+# 4. TERRAFORM
+# ==========================================
+
+# Add Terraform to PATH for the current session
+$env:Path += ";C:\Users\chaym\Downloads\terraform_1.16.1_windows_amd64"
+
+# Check Terraform
+terraform --version
+
+
+# ==========================================
+# 5. DOCKER
+# ==========================================
+
+# Docker path found on this computer
+$env:Path += ";C:\Users\chaym\AppData\Local\Programs\DockerDesktop\resources\bin"
+
+# Check Docker
+docker --version
+
+# Check Docker Compose
+docker compose version
+
+# Check Docker Engine
+docker info
+# Check WSL
+wsl --status
+
+# Install WSL 2
+wsl --install
+
+# Check WSL version after installation
+wsl --version
