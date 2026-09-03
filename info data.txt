@@ -347,4 +347,43 @@ review_comment_message = NULL
 
 العميل أعطى تقييمًا بدون تعليق
 
-إذن Data Cleaning = فهم business meaning + technical cleaning.print(df.isna().sum())"
+إذن Data Cleaning = فهم business meaning + technical cleaning.
+print(df.isna().sum())"
+
+/load_duckdb.py
+
+======================================================================
+DUCKDB DATA WAREHOUSE
+======================================================================
+Loading customers...
+  ✓ customers: 99,441 rows
+Loading orders...
+  ✓ orders: 99,441 rows
+Loading order_items...
+  ✓ order_items: 112,650 rows
+Loading payments...
+  ✓ payments: 103,886 rows
+Loading reviews...
+  ✓ reviews: 99,224 rows
+Loading products...
+  ✓ products: 32,951 rows
+Loading sellers...
+  ✓ sellers: 3,095 rows
+Loading geolocation...
+  ✓ geolocation: 1,000,163 rows
+Loading category_translation...
+  ✓ category_translation: 71 rows
+
+Warehouse tables:
+  ✓ category_translation
+  ✓ customers
+  ✓ geolocation
+  ✓ order_items
+  ✓ orders
+  ✓ payments
+  ✓ products
+  ✓ reviews
+  ✓ sellers
+
+Database created at: data\warehouse\ecommerce.duckdb
+(.venv) PS C:\Users\chaym\Desktop\morocco-ecommerce-data-platform> 
